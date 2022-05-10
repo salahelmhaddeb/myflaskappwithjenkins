@@ -1,6 +1,6 @@
 # myFlaskAppWithJenkins
 
-Cursus DeVops 2020 : Une simple application avec Flask pour tester les pipelines avec Jenkins
+Cursus DeVops 2022 : Une simple application avec Flask pour tester les pipelines avec Jenkins
 
 # Installer les dépendances
 pip install -r requirements.txt

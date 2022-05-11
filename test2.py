@@ -1,13 +1,14 @@
 import unittest
 from app import app
 
-class TestHello(unittest.TestCase):
+# class de test
+class TestUnitaire(unittest.TestCase):
     def setUp(self):
         app.testing = True
         self.app = app.test_client()
 
     # Tester la page d'accueil
-    def test_hello(self):
+    def test_page_accueil(self):
         rv = self.app.get('/')
         self.assertEqual(rv.status, '200 OK')
         

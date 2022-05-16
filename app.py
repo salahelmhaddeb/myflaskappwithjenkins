@@ -11,8 +11,9 @@ csrf.init_app(app)
 def index():
     return render_template("index.html")
 
+@app.route("/hello")
 def hello():
-    return 'Hello World!\n'
+    return 'Hello World! Coucou tout le monde !\n'
 
 @app.route('/hello/<username>')
 def hello_user(username):
@@ -28,4 +29,4 @@ def page_a_propos():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='5050')
+    app.run(host='0.0.0.0', port='5050', debug=True)
